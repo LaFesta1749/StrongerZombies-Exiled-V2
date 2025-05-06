@@ -1,5 +1,8 @@
 # StrongerZombies
 
+[![Downloads](https://img.shields.io/github/downloads/LaFesta1749/StrongerZombies-Exiled-V2/total?label=Downloads&color=333333&style=for-the-badge)](https://github.com/LaFesta1749/StrongerZombies-Exiled-V2/releases/latest) 
+[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/PTmUuxuDXQ)
+
 A plugin for [SCP: Secret Laboratory](https://scpslgame.com/) using the [Exiled](https://github.com/ExMod-Team/EXILED) framework.
 
 ## 📌 Description
