@@ -11,6 +11,7 @@ using Interactables.Interobjects.DoorUtils;
 using MEC;
 
 using UnityEngine;
+using Exiled.API.Extensions;
 
 namespace StrongerZombies.Handlers
 {
@@ -52,7 +53,7 @@ namespace StrongerZombies.Handlers
         private void DoorInteract(InteractingDoorEventArgs ev)
         {
             if (_roundEnded || ev.Player.Role != RoleTypeId.Scp0492
-                || ev.Door.RequiredPermissions.RequiredPermissions.HasFlagFast(KeycardPermissions.ScpOverride)
+                || ev.Door.RequiredPermissions.HasFlagFast(DoorPermissionFlags.ScpOverride)
                 || !ev.Door.IsKeycardDoor || ev.Door.IsLocked || ev.Door.IsOpen || _rateLimit > Time.time)
             {
                 Log.Debug("Cannot Break Door: Not a Zombie, Door Is Locked, Door is a Normal Hall Door, Rate Limit, Checkpoint Door, Door is Open");
@@ -180,7 +181,7 @@ namespace StrongerZombies.Handlers
         private const string OnCdTag = "sz_oncd";
         private const string CooldownTag = "sz_cd";
 
-        private readonly List<CoroutineHandle> _coroutines = new List<CoroutineHandle>();
+        private readonly List<CoroutineHandle> _coroutines = new();
         private readonly StrongerZombies _core;
 
         private float _rateLimit;
