@@ -15,7 +15,7 @@ namespace StrongerZombies
         public override Version RequiredExiledVersion => new Version(9, 6, 0);
 
         private ZombieHandler? _handlers;
-
+        
         public override void OnEnabled()
         {
             Log.Debug("Initializing any event handlers...");
