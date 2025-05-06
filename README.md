@@ -51,7 +51,7 @@ Original plugin idea based on teamwork-focused gameplay for zombies.
 ---
 
 ## 🧠 Credits
-- Built using Exiled 9.2.1
+- Built using Exiled 9.6.0-beta7
 - Special thanks to the Exiled Team and SCP:SL Modding Community
 
 ---
